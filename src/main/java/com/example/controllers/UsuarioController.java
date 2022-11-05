@@ -25,7 +25,9 @@ public class UsuarioController {
 		return clienteService.save(cliente);
 	}
 	
-	public Usuario acesso (@RequestBody UsuarioAcessoDTO clienteAcessoDTO) {
-		return acessoService.save (clienteAcessoDTO); 
+	@PostMapping("/acesso")
+	public Usuario acesso (@RequestBody UsuarioAcessoDTO usuarioAcessoDTO) {
+		return acessoService.save(usuarioAcessoDTO);
 	}
+	
 }

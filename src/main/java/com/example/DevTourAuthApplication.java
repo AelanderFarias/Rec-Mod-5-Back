@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @EntityScan(basePackages = {"com.example.model.entities"})
-//@EnableJpaRepositories(basePackages = {"com.example.repositories"})
-//@ComponentScan(basePackages = {"com.example.controller", "com.example.serviceImpl"})
+@EnableJpaRepositories(basePackages = {"com.example.repositories"})
+@ComponentScan(basePackages = {"com.example.controllers", "com.example.serviceImpl"})
 
 @SpringBootApplication
 public class DevTourAuthApplication {
