@@ -9,27 +9,25 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-
 @Data
 @Entity
-@Table(name="cliente")
-
-public class Cliente {
+@Table(name="viagem")
+public class Viagem {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name = "primeiro_nome", nullable = false)
-	private String primeiroNome;
+	@Column(name = "destino", nullable = false)
+	private String destino;
 	
-	@Column(name = "ultimo_nome")
-	private String ultimoNome;
+	@Column(name = "partida", nullable = false)
+	private String partida;
 	
-	@Column(name = "email", nullable = false)
-	private String email;
+	@Column(name = "valor", nullable = false)
+	private String valor;
 	
-	
-	
-	
+	@Column(name = "transporte", nullable = false)
+	private String transporte;
+
 }

@@ -1,10 +1,10 @@
 package com.example.services;
 
-import com.example.model.dto.ClienteAcessoDTO;
-import com.example.model.entities.Cliente;
+import com.example.model.dto.UsuarioAcessoDTO;
+import com.example.model.entities.Usuario;
 
 public interface AcessoService {
 
 	
-	Cliente save(ClienteAcessoDTO clienteAcessoDTO );	
+	Usuario save(UsuarioAcessoDTO clienteAcessoDTO );	
 }

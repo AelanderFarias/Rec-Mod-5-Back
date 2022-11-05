@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 
-public class ClienteAcessoDTO {
+public class UsuarioAcessoDTO {
 	
 	
 	private Long idUser;
